@@ -16,7 +16,19 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 0858e1845b8dac14bac3356d6cce5bed
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: e52d646c51b092841aa7e911263039df
+    m_Address: English (en)
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e2398c5950de13b4cb890ad967ca98c8
+    m_Address: toki pona (tok)
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 0d2224aef22eea749916182f9442aa19, type: 2}
   m_SchemaSet:
