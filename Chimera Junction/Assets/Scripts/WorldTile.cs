@@ -12,7 +12,7 @@ public class WorldTile : MonoBehaviour
      * 
      * Description: Container for the information within a World Tile
      * 
-     * Usage: Instantiated for each world tile. DO not rotate a world tile; instead change their boundry types.
+     * Usage: Instantiated for each world tile. Do not rotate a world tile; instead change their boundry types.
      */
 
     /*
@@ -22,14 +22,15 @@ public class WorldTile : MonoBehaviour
 
     List<string> validNeighbors = new List<string> { "Land", "Air", "Water" }; //Valid Neighbor strings. Other strings will "work", but may cause issues
 
-    [SerializeField] string uType { set { uType = value; } get { if (validNeighbors.Contains(uType)) {Debug.Log("Invalid Neighbor! At: " + this.gameObject.name);} return uType;  } }    //Upwards Boundry Type
-    [SerializeField] string dType { set { dType = value; } get { if (validNeighbors.Contains(uType)) { Debug.Log("Invalid Neighbor! At: " + this.gameObject.name); } return dType; } }     //Downwards Boundry Type
-    [SerializeField] string rType { set { rType = value; } get { if (validNeighbors.Contains(uType)) { Debug.Log("Invalid Neighbor! At: " + this.gameObject.name); } return rType; } }     //Right Boundry Type
-    [SerializeField] string lType { set { lType = value; } get { if (validNeighbors.Contains(uType)) { Debug.Log("Invalid Neighbor! At: " + this.gameObject.name); } return lType; } }     //Left Boundry Type
-    [SerializeField] string fType { set { fType = value; } get { if (validNeighbors.Contains(uType)) { Debug.Log("Invalid Neighbor! At: " + this.gameObject.name); } return fType; } }     //Forward Boundry Type
-    [SerializeField] string bType { set { bType = value; } get { if (validNeighbors.Contains(uType)) { Debug.Log("Invalid Neighbor! At: " + this.gameObject.name); } return bType; } }     //Back Boundry Type
+    [SerializeField] string UType { set { UType = value; } get { if (validNeighbors.Contains(UType)) {Debug.Log("Invalid Neighbor! At: " + this.gameObject.name);} return UType;  } }    //Upwards Boundry Type
+    [SerializeField] string DType { set { DType = value; } get { if (validNeighbors.Contains(UType)) { Debug.Log("Invalid Neighbor! At: " + this.gameObject.name); } return DType; } }     //Downwards Boundry Type
+    [SerializeField] string RType { set { RType = value; } get { if (validNeighbors.Contains(UType)) { Debug.Log("Invalid Neighbor! At: " + this.gameObject.name); } return RType; } }     //Right Boundry Type
+    [SerializeField] string LType { set { LType = value; } get { if (validNeighbors.Contains(UType)) { Debug.Log("Invalid Neighbor! At: " + this.gameObject.name); } return LType; } }     //Left Boundry Type
+    [SerializeField] string FType { set { FType = value; } get { if (validNeighbors.Contains(UType)) { Debug.Log("Invalid Neighbor! At: " + this.gameObject.name); } return FType; } }     //Forward Boundry Type
+    [SerializeField] string BType { set { BType = value; } get { if (validNeighbors.Contains(UType)) { Debug.Log("Invalid Neighbor! At: " + this.gameObject.name); } return BType; } }     //Back Boundry Type
 
-
-
+    List<string> validShapes = new List<string> { "Square", "Round", "LargeRound" }; //Valid Shape strings. Other strings will "work", but may cause issues
+    [SerializeField] string Shape { set { Shape = value; } get { if (validShapes.Contains(Shape)) { Debug.Log("Invalid Shape! At: " + this.gameObject.name); } return Shape; } } 
+    // Shape type
 
 }
