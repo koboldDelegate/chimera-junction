@@ -22,6 +22,10 @@ MonoBehaviour:
     m_Localized: kama pona!
     m_Metadata:
       m_Items: []
+  - m_Id: 2248302728003584
+    m_Localized: I don't know toki pona!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
