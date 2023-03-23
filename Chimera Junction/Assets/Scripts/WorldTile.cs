@@ -33,4 +33,7 @@ public class WorldTile : MonoBehaviour
     [SerializeField] string Shape { set { Shape = value; } get { if (validShapes.Contains(Shape)) { Debug.Log("Invalid Shape! At: " + this.gameObject.name); } return Shape; } } 
     // Shape type
 
+ 
+
+
 }
